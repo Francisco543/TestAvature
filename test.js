@@ -40,7 +40,6 @@ for(var i=0;i<h.length;i++){
                         }
                         }
                     }
-            
                 }
             }
         }else if(horas ===2){
@@ -58,15 +57,37 @@ for(var i=0;i<h.length;i++){
                               posibilidad++; 
                                }
                            }
+                        }
+                    }
+               
+                }
+            }
+        }
+
+    }else if(horas ===0){
+        if(h2[j]!=horas && h2[j]<=9){
+            if(h2[j]!=horas){
+                horas2=h2[j]
+               for(var mi=0;mi<m.length;mi++){
+                   if(m[mi]!=horas && m[mi]!=horas2){
+                        minutos = m[mi]
+                   for(var si=0;si<s.length;si++){
+                       if(s[si]!=horas && s[si]!=horas2 && s[si]!=minutos){
+                        minutos2=s[si]
+                       if(horas != null && horas2 != null && minutos != null && minutos2 !=null && horas+horas2 <23 && minutos+minutos2<59){
+                           console.log(horas,horas2,minutos,minutos2)
+                          posibilidad++; 
                            }
                        }
-               
-                   }
-               }
+                    }
+                }
+           
             }
-
         }
     }
+
+    }
+}
 }
 console.log(posibilidad)
 }
