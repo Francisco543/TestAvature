@@ -16,25 +16,25 @@ console.log(s)
 
 var posibilidad=0;
 
-var horas;
-var horas2;
-var minutos;
-var minutos2;
+var hours;
+var hours2;
+var min;
+var min2;
 
 for(var i=0;i<h.length;i++){
-     horas=h[i]
+     hours=h[i]
     for(var j=0;j<h2.length;j++){
-        if(horas===1){
-            if(h2[j]!=horas){
-                 horas2=h2[j]
+        if(hours===1){
+            if(h2[j]!=hours){
+                 hours2=h2[j]
                 for(var mi=0;mi<m.length;mi++){
-                    if(m[mi]!=horas && m[mi]!=horas2){
-                         minutos = m[mi]
+                    if(m[mi]!=hours && m[mi]!=hours2){
+                         min = m[mi]
                     for(var si=0;si<s.length;si++){
-                        if(s[si]!=horas && s[si]!=horas2 && s[si]!=minutos){
-                         minutos2=s[si]
-                        if(horas != null && horas2 != null && minutos != null && minutos2 !=null && horas+horas2 <23 && minutos+minutos2<59){
-                            console.log(horas,horas2,minutos,minutos2)
+                        if(s[si]!=hours && s[si]!=hours2 && s[si]!=min){
+                         min2=s[si]
+                        if(hours != null && hours2 != null && min != null && min2 !=null && hours+hours2 <23 && min+min2<59){
+                            console.log(hours,hours2,min,min2)
                            posibilidad++; 
                             }
                         }
@@ -42,18 +42,18 @@ for(var i=0;i<h.length;i++){
                     }
                 }
             }
-        }else if(horas ===2){
-            if(h2[j]!=horas && h2[j]<=3){
-                if(h2[j]!=horas){
-                    horas2=h2[j]
+        }else if(hours ===2){
+            if(h2[j]!=hours && h2[j]<=3){
+                if(h2[j]!=hours){
+                    hours2=h2[j]
                    for(var mi=0;mi<m.length;mi++){
-                       if(m[mi]!=horas && m[mi]!=horas2){
-                            minutos = m[mi]
+                       if(m[mi]!=hours && m[mi]!=hours2){
+                            min = m[mi]
                        for(var si=0;si<s.length;si++){
-                           if(s[si]!=horas && s[si]!=horas2 && s[si]!=minutos){
-                            minutos2=s[si]
-                           if(horas != null && horas2 != null && minutos != null && minutos2 !=null && horas+horas2 <23 && minutos+minutos2<59){
-                               console.log(horas,horas2,minutos,minutos2)
+                           if(s[si]!=hours && s[si]!=hours2 && s[si]!=min){
+                            min2=s[si]
+                           if(hours != null && hours2 != null && min != null && min2 !=null && hours+hours2 <23 && min+min2<59){
+                               console.log(hours,hours2,min,min2)
                               posibilidad++; 
                                }
                            }
@@ -64,18 +64,18 @@ for(var i=0;i<h.length;i++){
             }
         }
 
-    }else if(horas ===0){
-        if(h2[j]!=horas && h2[j]<=9){
-            if(h2[j]!=horas){
-                horas2=h2[j]
+    }else if(hours ===0){
+        if(h2[j]!=hours && h2[j]<=9){
+            if(h2[j]!=hours){
+                hours2=h2[j]
                for(var mi=0;mi<m.length;mi++){
-                   if(m[mi]!=horas && m[mi]!=horas2){
-                        minutos = m[mi]
+                   if(m[mi]!=hours && m[mi]!=hours2){
+                        min = m[mi]
                    for(var si=0;si<s.length;si++){
-                       if(s[si]!=horas && s[si]!=horas2 && s[si]!=minutos){
-                        minutos2=s[si]
-                       if(horas != null && horas2 != null && minutos != null && minutos2 !=null && horas+horas2 <23 && minutos+minutos2<59){
-                           console.log(horas,horas2,minutos,minutos2)
+                       if(s[si]!=hours && s[si]!=hours2 && s[si]!=min){
+                        min2=s[si]
+                       if(hours != null && hours2 != null && min != null && min2 !=null && hours+hours2 <23 && min+min2<59 ){
+                           console.log(hours,hours2,min,min2)
                           posibilidad++; 
                            }
                        }
